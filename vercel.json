@@ -2,19 +2,19 @@
     "version": 2,
     "builds": [
         {
-            "src": "backend/main.py",
+            "src": "main.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "backend/main.py",
+            "dest": "main.py",
             "methods": ["GET", "POST", "OPTIONS"]
         },
         {
             "src": "/(.*)",
-            "dest": "backend/main.py",
+            "dest": "main.py",
             "methods": ["GET", "POST", "OPTIONS"]
         }
     ],
